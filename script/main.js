@@ -19,9 +19,6 @@ const animationTimeline = () => {
       .split("")
       .join("</span><span>")}</span`;
   
-
-
-
   const ideaTextTrans = {
     opacity: 0,
     y: -20,
