@@ -3,6 +3,9 @@ const animationTimeline = () => {
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
+  const textBoxChars1 = document.getElementsByClassName("hbd-chatbox1")[0];
+  const hbd1 = document.getElementsByClassName("wish-hbd1")[0];
+
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
@@ -11,6 +14,15 @@ const animationTimeline = () => {
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
     .join("</span><span>")}</span`;
+
+  textBoxChars1.innerHTML = `<span>${textBoxChars.innerHTML
+      .split("")
+      .join("</span><span>")}</span`;
+  
+  hbd1.innerHTML = `<span>${hbd.innerHTML
+      .split("")
+      .join("</span><span>")}</span`;
+
 
   const ideaTextTrans = {
     opacity: 0,
@@ -185,6 +197,50 @@ const animationTimeline = () => {
     .to(".idea-106", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-107", 0.7, ideaTextTrans)
     .to(".idea-107", 0.7, ideaTextTransLeave, "+=1.5")
+    
+    .from(".ten", 0.7, {
+      scale: 0.2,
+      opacity: 0
+    })
+    .from(".fake-btn1", 0.3, {
+      scale: 0.2,
+      opacity: 0
+    })
+    .staggerTo(
+      ".hbd-chatbox1 span",
+      0.5,
+      {
+        visibility: "visible"
+      },
+      0.05
+    )
+    .to(".fake-btn1", 0.1, {
+      backgroundColor: "rgb(127, 206, 248)"
+    })
+    .to(
+      ".ten",
+      0.5,
+      {
+        scale: 0.2,
+        opacity: 0,
+        y: -150
+      },
+      "+=0.7"
+    )
+    .from(".idea-120", 0.7, ideaTextTrans)
+    .to(".idea-120", 0.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-121", 0.7, ideaTextTrans)
+    .to(".idea-121", 0.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-122", 0.7, ideaTextTrans)
+    .to(".idea-122", 0.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-123", 0.7, ideaTextTrans)
+    .to(".idea-123", 0.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-124", 0.7, ideaTextTrans)
+    .to(".idea-124", 0.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-125", 0.7, ideaTextTrans)
+    .to(".idea-125", 0.7, ideaTextTransLeave, "+=1.5")
+
+
     .staggerFromTo(
       ".baloons img",
       2.5,

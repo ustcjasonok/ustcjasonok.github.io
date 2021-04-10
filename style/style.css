@@ -274,6 +274,10 @@ body {
     width: 90%;
   }
 
+  .ten .text-box {
+    width: 90%;
+  }
+
   .text-box .fake-btn {
     right: 5px;
     bottom: -38px;
