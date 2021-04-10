@@ -15,11 +15,11 @@ const animationTimeline = () => {
     .split("")
     .join("</span><span>")}</span`;
 
-  textBoxChars1.innerHTML = `<span>${textBoxChars.innerHTML
+  textBoxChars1.innerHTML = `<span>${textBoxChars1.innerHTML
       .split("")
       .join("</span><span>")}</span`;
   
-  hbd1.innerHTML = `<span>${hbd.innerHTML
+  hbd1.innerHTML = `<span>${hbd1.innerHTML
       .split("")
       .join("</span><span>")}</span`;
 
