@@ -145,6 +145,10 @@ body {
 
 .idea-5 span,
 .idea-6 span,
+.idea-121 span
+.idea-122 span
+.idea-123 span
+.idea-124 span
 .wish-hbd span {
   display: inline-block;
 }
@@ -158,6 +162,18 @@ body {
 } */
 
 .idea-6 span {
+  font-size: 15rem;
+}
+.idea-121 span {
+  font-size: 15rem;
+}
+.idea-122 span {
+  font-size: 15rem;
+}
+.idea-123 span {
+  font-size: 15rem;
+}
+.idea-124 span {
   font-size: 15rem;
 }
 
