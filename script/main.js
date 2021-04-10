@@ -4,7 +4,7 @@ const animationTimeline = () => {
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
   const textBoxChars1 = document.getElementsByClassName("hbd-chatbox1")[0];
-  const hbd1 = document.getElementsByClassName("wish-hbd1")[0];
+ 
 
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
@@ -19,9 +19,7 @@ const animationTimeline = () => {
       .split("")
       .join("</span><span>")}</span`;
   
-  hbd1.innerHTML = `<span>${hbd1.innerHTML
-      .split("")
-      .join("</span><span>")}</span`;
+
 
 
   const ideaTextTrans = {
